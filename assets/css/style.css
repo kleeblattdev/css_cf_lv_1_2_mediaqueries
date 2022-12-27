@@ -1,0 +1,112 @@
+/* GLOBAL STYLES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER STYLE */
+
+header {
+    background-color: aqua;
+    width: 100vw;
+    height: 10vh;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 3vh 0;
+}
+
+/* MAIN STYLES */
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    /* height: 80vh; */
+    width: 100vw;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+}
+
+main section article{
+    margin: 10px;
+    width: 40%;
+    height: 20%;
+    padding: 5vh 15vw;
+    text-align: center;
+}
+
+.article1 {
+    background-color: green;
+
+}
+
+.article2 {
+    background-color: orange;
+}
+
+.article3 {
+    background-color: deeppink;
+
+}
+
+.article4 {
+    background-color: greenyellow;
+}
+
+main aside{
+    background-color: mediumpurple;
+    margin: 10px;
+    padding: 3vh 5vw;
+    text-align: center;
+}
+
+/* FOOTER STYLE */
+
+footer {    
+    background-color: dodgerblue;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    padding: 3vh 0;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+    main aside{
+        width: 100vw;
+        height: 10vh;
+        margin: 0;
+    }
+
+    main{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    main{
+        flex-direction: row;
+    }
+
+    main aside{
+        width: 100vw;
+    }
+
+    main section{
+        display: flex;
+        flex-direction:column;
+    }
+
+    main section article{
+        width: 100vw;
+    }
+
+}
